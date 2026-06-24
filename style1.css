@@ -1,42 +1,88 @@
-h1{
-	font-family:league sparton;
-	color:#ffa511;
-	text-align:center;
-	font-size:55px;
-	font-weight:900;
-	letter-spacing:2px;
-	line-height:1.5;
-	text-decoration:teal double underline;
-	text-transform:uppercase;
+*{
+	font-family:courier new;
 }
-div{
-	font-family:georgia;
+h1,h3{
+	color:#b92b27;
 }
-div h1{
-	text-decoration:teal underline;
+#login{
+	background-color:white;
 }
-h3{
-	text-align:center;
+#signup{
+	background-color:#b92b27;
+	color:white;
 }
-h4{
-	text-align:center;
+.upvote{
+	background-color:green;
+	color:aliceblue;
 }
-p{
-	line-height:30px;
-	text-align:center;
+.post a{
+	color:purple;
+	background-color:yellow;
+}
+nav ul li a{
+	color:hotpink;
+}
+p+h3{
+	text-decoration:underline;
+}
+.upvote+button{
+	background-color:cornflowerblue;
+	color:darkblue;
+}
+div>input{
+	background-color:darksalmon;
+}
+input[type="text"]{
 	color:red;
 }
-a{
+input[type="password"]{
 	color:green;
-	text-decoration:none;
 }
-button{
-	background-color:white;
-	color:blueviolet;
+input[type]{
+	background-color:ghostwhite;
 }
-textarea{
-	color:#000000;
+button:hover{
+	background-color:black;
+	color:white;
 }
-p span{
-	text-decoration:underline;
+h3:hover{
+	text-decoration:overline;
+}
+button:active{
+	background-color:hotpink;
+	color:white;
+}
+p:active{
+	font-weight:bold;
+	color:green;
+}
+input[type="radio"]:checked+label{
+	color:red;
+	font-weight:bold;
+}
+.post:nth-of-type(2n+1){
+	background-color:blanchedalmond;
+}
+h1::first-letter{
+	color:green;
+}
+p{
+	text-align:justify;
+	color:#eb00d3;
+}
+p::first-line{
+	color:blue;
+}
+p::selection{
+	background-color:rgb(199,192,58)
+}
+#h1::first-letter,#h1{
+	color:#1b74e4 !important;
+}
+.userbtn{
+	background-color:aqua;
+}
+#searchbtn{
+	background-color:black;
+	color:white;
 }
