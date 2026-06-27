@@ -1,88 +1,41 @@
-*{
-	font-family:courier new;
+#outer{
+	height:200px;
+	width:73px;
+	border:2px solid black;
 }
-h1,h3{
-	color:#b92b27;
+.inner{
+	height:50px;
+	width:50px;
+	border:2px solid black;
+	margin:10px;
+	border-radius:50%;
 }
-#login{
-	background-color:white;
+#red{
+	background-color:red;
 }
-#signup{
-	background-color:#b92b27;
-	color:white;
-}
-.upvote{
-	background-color:green;
-	color:aliceblue;
-}
-.post a{
-	color:purple;
+#yellow{
 	background-color:yellow;
 }
-nav ul li a{
-	color:hotpink;
+#green{
+	background-color:green;
 }
-p+h3{
-	text-decoration:underline;
-}
-.upvote+button{
-	background-color:cornflowerblue;
-	color:darkblue;
-}
-div>input{
-	background-color:darksalmon;
-}
-input[type="text"]{
-	color:red;
-}
-input[type="password"]{
-	color:green;
-}
-input[type]{
-	background-color:ghostwhite;
-}
-button:hover{
-	background-color:black;
+#box{
+	height:150px;
+	width:300px;
 	color:white;
+	background-color:grey;
+	border:5px dotted black;
+	margin:20px 1em 40px 2em;
+	padding:1em;
 }
-h3:hover{
-	text-decoration:overline;
+.box{
+	height:100px;
+	width:100px;
+	background-color:pink;
+	border:2px solid black;
+	border-radius:50%;
+	display:inline-block;
 }
-button:active{
-	background-color:hotpink;
-	color:white;
-}
-p:active{
-	font-weight:bold;
-	color:green;
-}
-input[type="radio"]:checked+label{
-	color:red;
-	font-weight:bold;
-}
-.post:nth-of-type(2n+1){
-	background-color:blanchedalmond;
-}
-h1::first-letter{
-	color:green;
-}
-p{
-	text-align:justify;
-	color:#eb00d3;
-}
-p::first-line{
-	color:blue;
-}
-p::selection{
-	background-color:rgb(199,192,58)
-}
-#h1::first-letter,#h1{
-	color:#1b74e4 !important;
-}
-.userbtn{
-	background-color:aqua;
-}
-#searchbtn{
-	background-color:black;
-	color:white;
+ul li{
+	display:inline;
 }
