@@ -1,41 +1,84 @@
-#outer{
-	height:200px;
-	width:73px;
+.card{
+	height:260px;
+	width:200px;
 	border:2px solid black;
-}
-.inner{
-	height:50px;
-	width:50px;
-	border:2px solid black;
+	border-radius:5px;
+	display:inline-block;
 	margin:10px;
-	border-radius:50%;
+	box-shadow:0px 4px 8px black;
+	transition:1s;
 }
-#red{
-	background-color:red;
+#img{
+	width:100%;
+	border-radius:5px 5px 0 0;
 }
-#yellow{
-	background-color:yellow;
+.desc{
+	text-align:center;
+	padding:0px 2px 0 2px;
+	margin-top:-25px;
 }
-#green{
-	background-color:green;
+.card:hover{
+	box-shadow:0.5px 4px 16px black;
 }
-#box{
-	height:150px;
-	width:300px;
-	color:white;
-	background-color:grey;
-	border:5px dotted black;
-	margin:20px 1em 40px 2em;
-	padding:1em;
-}
-.box{
+#box1{
 	height:100px;
 	width:100px;
+	background-color:green;
+	transition:width 2s ease-in 0.5s;
+}
+#box1:hover{
+	width:600px;
+}
+#box2{
+	height:100px;
+	width:100px;
+	background-color:red;
+	transform:translate(200px, 200px) rotate(90deg);
+}
+#box3{
+	height:100px;
+	width:100px;
+	background-color:lightblue;
+	transform:skewX(20deg);
+	margin-left:10px;
+}
+#box4{
+	height:100px;
+	width:100px;
+	background-color:lightgreen;
+	box-shadow:2px 2px 5px green;
+}
+#pic{
+	height:125px;
+	width:100px;
 	background-color:pink;
-	border:2px solid black;
+	background-image:url("Cat_photo.jpg");
+	background-size:cover;
+	opacity:50%;
+}
+.face{
+	height:350px;
+	width:350px;
+	background-color:#ffa511;
+	border-radius:50%;
+}
+.mouth{
+	height:75px;
+	width:200px;
+	background-color:#b41212;
+	border-radius:0 0 50px 50px;
+	position:relative;
+	top:100px;
+	left:75px;
+}
+.eyes>div{
+	height:60px;
+	width:60px;
+	background-color:black;
 	border-radius:50%;
 	display:inline-block;
-}
-ul li{
-	display:inline;
+	position:relative;
+	top:40px;
+	left:49px;
+	margin:30px;
 }
