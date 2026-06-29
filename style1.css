@@ -1,84 +1,75 @@
-.card{
-	height:260px;
-	width:200px;
+#container{
+	height:300px;
+	width:80%;
+	background-color:azure;
+	margin:10px auto;
 	border:2px solid black;
-	border-radius:5px;
-	display:inline-block;
-	margin:10px;
-	box-shadow:0px 4px 8px black;
-	transition:1s;
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-start;
+	/*flex-wrap:wrap;*/
+	align-content:flex-start;
 }
-#img{
-	width:100%;
-	border-radius:5px 5px 0 0;
+#blue{
+	/*flex-basis:400px;
+	flex-grow:2;
+	min-width:300px;*/
+	flex-shrink:1;
 }
-.desc{
+#org{
+	align-self:flex-start;
+	flex:2 2 100px;
+	/*flex-grow:1;
+	flex-basis:50px;*/
+}
+h1{
 	text-align:center;
-	padding:0px 2px 0 2px;
-	margin-top:-25px;
 }
-.card:hover{
-	box-shadow:0.5px 4px 16px black;
+#container div{
+	height:100px;
+	width:50px;
+	color:white;
+	text-align:center;
+	font-size:1.5em;
 }
-#box1{
+.container{
+	height:400px;
+	width:400px;
+	border:2px solid lightseagreen;
+	border-radius:12px;
+	margin:15px auto;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-evenly;
+	align-content:space-evenly;
+}
+.container>div{
 	height:100px;
 	width:100px;
-	background-color:green;
-	transition:width 2s ease-in 0.5s;
+	background-color:gray;
+	font-size:50px;
+	border:2px solid black;
+	border-radius:10px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
 }
-#box1:hover{
-	width:600px;
-}
-#box2{
-	height:100px;
-	width:100px;
-	background-color:red;
-	transform:translate(200px, 200px) rotate(90deg);
-}
-#box3{
-	height:100px;
-	width:100px;
-	background-color:lightblue;
-	transform:skewX(20deg);
-	margin-left:10px;
-}
-#box4{
-	height:100px;
-	width:100px;
-	background-color:lightgreen;
-	box-shadow:2px 2px 5px green;
-}
-#pic{
-	height:125px;
-	width:100px;
+#navbar{
+	height:50px;
+	width:900px;
+	border:2px solid lightseagreen;
+	border-radius:7px;
 	background-color:pink;
-	background-image:url("Cat_photo.jpg");
-	background-size:cover;
-	opacity:50%;
+	margin:15px 0;
+	display:flex;
+	justify-content:flex-start;
+	
 }
-.face{
-	height:350px;
-	width:350px;
-	background-color:#ffa511;
-	border-radius:50%;
-}
-.mouth{
-	height:75px;
-	width:200px;
-	background-color:#b41212;
-	border-radius:0 0 50px 50px;
-	position:relative;
-	top:100px;
-	left:75px;
-}
-.eyes>div{
-	height:60px;
-	width:60px;
-	background-color:black;
-	border-radius:50%;
-	display:inline-block;
-	position:relative;
-	top:40px;
-	left:49px;
-	margin:30px;
+#navbar>div{
+	height:50px;
+	width:100px;
+	font-size:24px;
+	margin-left:5px;
+	display:flex;
+	align-items:center;
 }
