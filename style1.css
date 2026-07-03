@@ -79,7 +79,7 @@
    border-radius:15px;
 }
 }
-@keyframes fontAnimation{
+/*@keyframes fontAnimation{
 from{
     font-size:20px;
 }
@@ -94,7 +94,7 @@ from{
 to{
    background-color:blue;
  }
-}
+}*/
 .loader{
 	height:120px;
 	width:120px;
