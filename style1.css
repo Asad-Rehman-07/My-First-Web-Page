@@ -1,174 +1,106 @@
-.container{
-	height:100vh;
-	margin:5px;
+*{
+	margin:0;
 	padding:0;
-	display:grid;
-	grid-template-rows:repeat(12,1fr);
-	grid-template-columns:repeat(12,1fr);
-	grid-gap:10px;
+	font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
 }
-.container div{
-	background-color:pink;
-	font-size:1.4rem;
+.main_box{
+	margin-top:5px;
+	background-image:url(Photo.jpg);
+	background-size:cover;
+	height:120vh;
 }
-.header{
-	grid-column:1/span 12;
+.btn_one i{
+	color:white;
+	font-size:30px;
+	font-weight:700;
+	position:absolute;
+	left:16px;
+	line-height:60px;
+	cursor:pointer;
+	transition:all 0.3s linear;
 }
-.sidebar{
-	grid-row:2/span 10;
-	grid-column:1/span 3;
+.sidebar_menu{
+	position:relative;
+	left:-300px;
+	height:120vh;
+	width:257px;
+	background-color:rgba(255,255,255,0.1);
+	box-shadow:0 0 5px rgba(255,255,255,0.5);
+	transition:all 0.3s linear;
 }
-.navigation{
-	grid-column:4/span 6;
-}
-.ads{
-	grid-row:2/span 10;
-	grid-column:10/span 3;
-}
-.main{
-	grid-row:3/span 9;
-	grid-column:4/span 6;
-}
-.footer{
-	grid-column:1/span 12;
-}
-@media(max-width:720px){
-	.header{
-		grid-column:1/span 12;
-	}
-	.navigation{
-		grid-column:1/span 12;
-		grid-row:2;
-	}
-	.sidebar{
-		grid-row:3/span 9;
-		grid-column:1/span 3;
-	}
-	.main{
-		grid-row:3/span 9;
-		grid-column:4/span 9;
-	}
-	.ads{
-		grid-column:1/span 3;
-		grid-row:12;
-	}
-	.footer{
-		grid-column:4/span 9;
-		grid-row:12;
-	}
-}
-.box{
-   height:100px;
-   width:300px;
-   background-color:pink;
-   animation:widthAnimate 3s ease-in 0s 3 normal;
-}
-@keyframes widthAnimate{
-0%{
-   width:10px;
-   background-color:green;
-}
-50%{
-   width:200px;
-   background-color:yellow;
-   border-radius:7.5px;
-}
-100%{
-   width:400px;
-   background-color:blue;
-   border-radius:15px;
-}
-}
-/*@keyframes fontAnimation{
-from{
-    font-size:20px;
-}
-to{
-    font-size:40px;
-}
-}
-@keyframes colorAnimate{
-from{
-   background-color:green;
-}
-to{
-   background-color:blue;
- }
-}*/
-.loader{
-	height:120px;
-	width:120px;
-	margin:15px;
-	border:16px solid #f3f3f3;
-	border-top:16px solid goldenrod;
-	border-radius:50%;
-	animation:spin 2s linear 0s infinite normal;
-}
-@keyframes spin{
-	0%{
-		transform:rotate(0deg);
-	}
-	100%{
-		transform:rotate(360deg);
-	}
-}
-.h1{
-   background-color:yellow;
-   border:2px solid black;
-}
-@media(min-width:300px) and (max-width:600px){
-.h1{
-   background-color:magenta;
-   color:white;
-}
-div{
-   height:100px;
-   width:100px;
-   background-color:blue;
-  }
-}
-@media(orientation:landscape){
-.h1{
-   background-color:aqua;
-   color:brown;
-  }
-}
-h2 i{
-	color:#d56f3e;
-}
-h1 span{
-	color:#9d6f24;
-}
-#pets{
-	display:flex;
-	justify-content:space-evenly;
-}
-.card{
-	width:300px;
-	border:2px solid black;
-	border-radius:25px;
-	padding:10px;
-	margin:10px;
-}
-.card p{
-	text-align:justify;
-}
-.card:hover{
-	box-shadow:0.5px 4px 16px black;
-}
-.img{
+.sidebar_menu .logo{
+	position:absolute;
 	width:100%;
-	border-radius:25px;
+	height:60px;
+	line-height:60px;
+	box-shadow:0 1px 3px rgba(255,255,255,0.5);
 }
-h4{
-	text-align:right;
-	color:#3c787e;
+.sidebar_menu .logo a{
+	position:absolute;
+	left:50px;
+	color:white;
+	font-size:20px;
+	font-weight:500;
 }
-@media(max-width:375px){
-	#pets{
-		flex-wrap:wrap;
-	}
-	.card:hover{
-		box-shadow:none;
-	}
+.btn_two i{
+	color:grey;
+	font-size:25px;
+	position:absolute;
+	left:235px;
+	line-height:60px;
+	cursor:pointer;
+	transition:all 0.3s linear;
+}
+.sidebar_menu .menu{
+	position:absolute;
+	width:100%;
+	top:80px;
+}
+.sidebar_menu .menu li{
+	margin-top:6px;
+	padding:12px 20px;
+}
+.sidebar_menu .menu i,a{
+	color:white;
+	text-decoration:none;
+	font-size:20px;
+}
+.sidebar_menu .menu i{
+	padding-right:8px;
+}
+.sidebar_menu .social_media{
+	position:absolute;
+	left:25%;
+	bottom:35px;
+}
+.sidebar_menu .social_media i{
+	opacity:0.5;
+	margin:0 5px;
+}
+#check{
+	display:none;
+}
+.sidebar_menu .menu li:hover{
+	box-shadow:0 0 3px rgba(255,255,255,0.5);
+}
+.btn_one i:hover{
+	font-size:40px;
+}
+.btn_two i:hover{
+	font-size:30px;
+}
+.sidebar_menu .social_media i:hover{
+	opacity:1;
+	transform:scale(1.2);
+}
+#check:checked ~ .sidebar_menu{
+	left:0;
+}
+#check:checked ~ .btn_one i{
+	opacity:0;
 }
