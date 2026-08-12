@@ -1,61 +1,55 @@
 console.log("We are England Cricket");
-let mon="January";
-if(mon=="January")
-	console.log("Winter is here")
-else if(mon=="April")
-	console.log("Spring is here");
-let num=16;
-if(num%10==0)
-	console.log("Good");
+let str1=prompt("Enter a string");
+if(str1.length==0)
+	console.log("String is empty");
 else
-	console.log("Bad");
-let str="Apple";
-if(str[0]=="A"||str[0]=="a"&&str.length>5)
-	console.log("Golden string");
+	console.log("String is not empty");
+let str3=prompt("Enter a string");
+console.log(`Original string: ${str3}`);
+console.log(`String without spaces: ${str3.trim()}`);
+let msg=" help! ";
+console.log(msg.trim().toUpperCase());
+let str2="Hello World!";
+if(str2[3]==str2[3].toLowerCase()&&str2[3]!=str2[3].toUpperCase())
+	console.log(`The character at index ${3} is lowercase`);
 else
-	console.log("Not a Golden string");
-let n1=32, n2=47852;
-if(n1%10==n2%10)
-	console.log(`Numbers have the same last digit which is ${n1%10}`);
+	console.log(`The character at index ${3} is not lowercase`);
+let num=[7,9,0,-2];
+let ans1=num.slice(0,3);
+console.log(ans1);
+let ans2=num.slice(1);
+console.log(ans2);
+let name="ApnaCollege";
+console.log(name.slice(4).replace("l","t").replace("l","t"));
+let students=["Rauf", "Ali", "Zahid", "Shoaib", "Saad"];
+console.log(students);
+console.log(students.reverse());
+console.log(students.sort());
+let arr=["January", "July", "March", "August"];
+arr.splice(0, 2, "July", "June");
+console.log(arr);
+// OR
+let res=arr.toSpliced(0, 2, "July", "June");
+console.log(res);
+// OR
+let res=["July", "June",...arr.slice(2)];
+console.log(res);
+// OR
+let res=["July", "June"].concat(arr.slice(2));
+console.log(res);
+let arr1=["Hello", "a", 23, 64, 99, -6];
+if(arr1[4]!=-1)
+	console.log("Element exists in array");
 else
-	console.log("Numbers don't have the same last digit");
+	console.log("Element doesn't exists in array");
 //OR
-let str1=String(n1);
-let str2=String(n2);
-if(str1[str1.length-1]==str2[str2.length-1])
-	console.log(`Numbers have the same last digit which is ${str1[str1.length-1]}`);
+if(arr1.includes(64))
+	console.log("Element exists in array");
 else
-	console.log("Numbers don't have the same last digit");
-let a=5, b=6, c=7;
-if(a>b){
-	if(a>c)
-		console.log(a+" is largest");
-	else
-		console.log(c+" is largest");
-}
-else if(b>c)
-	console.log(b+" is largest");
-else
-	console.log(c+" is largest");
-let quarter=1;
-switch(quarter){
-	case 1:
-	console.log("January, February, March");
-	break;
-	case 2:
-	console.log("April, May, June");
-	break;
-	case 3:
-	console.log("July, August, September");
-	break;
-	case 4:
-	console.log("October, November, December");
-	break;
-	default:
-	console.log("Not a quarter!");
-}
-console.error("This is an error message");
-console.warn("This is an warnning message");
-let name=prompt("Enter your name");
-let age=prompt("Enter your age");
-alert(`${name} is ${age} years old`);
+	console.log("Element doesn't exists in array");
+let lang=["C", "C++", "Html", "JavaScript", "Python", "Java", "C#", "Sql"];
+console.log(lang.reverse().indexOf("JavaScript"));
+let game=[["X",null,"O"],[null,"X",null],["O",null,"X"]];
+console.log(structuredClone(game));
+game[0].splice(1,1,"O");
+console.log(game);
