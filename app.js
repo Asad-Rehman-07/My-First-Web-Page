@@ -47,7 +47,7 @@ inp1.addEventListener("keydown",function(event){
 	console.log(event.code);
 	console.log("Key was pressed");
 });
-// And
+// AND
 inp1.addEventListener("keyup",function(){
 	console.log("Key was released");
 });
